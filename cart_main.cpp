@@ -39,6 +39,7 @@ Product* chooseProduct(){
 int main(){
 
 	char action;
+    Cart cart;
 
 	while(true){
 		cout<<"Select an action -  (a)dd item, (v)iew cart, (c)heckout" <<endl;
@@ -50,12 +51,15 @@ int main(){
 			Product * product = chooseProduct();
 			if(product!=NULL){
 				cout<<"Added to the Cart "<<product->getDisplayName() <<endl;
+                cart.addProduct(*product);
 			}
 
 		}
 		else if(action=='v'){
 			// View the Cart
-			
+            cout<<"--------------"<<endl;
+            cout<< cart.viewCart();
+            cout<<"--------------"<<endl;		
 		}
 		else{
 			// Checkout 
