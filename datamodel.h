@@ -31,4 +31,22 @@ public:
 	friend class Cart;
 };
 
+class Item{
+	Product product;
+	int quantity;
+
+public:
+	//Constructor using a Init List
+	Item(){}
+	Item(Product p, int q):product(p), quantity(q){}
+
+	int getItemPrice(){
+		return quantity * product.price;
+	}
+	string getItemInfo(){
+		return to_string(quantity) + " x " + product.name + " Rs. " + to_string(quantity * product.price) + "\n";
+	}
+
+	friend class Cart;
+};	
 
