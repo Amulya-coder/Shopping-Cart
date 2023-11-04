@@ -1,5 +1,5 @@
 # Shopping Cart Backend
-Designed and developed a e-commerve cart backend that can handle the demands of an online shopping users using C++ data structure and OOP concept.
+Designed and developed a e-commerce cart backend that can handle the demands of an online shopping users using C++ data structure and OOP concept.
 
 ## Features
 The ShoppingCart backend provides the following key features:
